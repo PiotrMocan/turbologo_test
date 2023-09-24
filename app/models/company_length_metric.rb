@@ -1,0 +1,2 @@
+class CompanyLengthMetric < ApplicationRecord
+end
