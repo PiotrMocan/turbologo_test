@@ -1,24 +1,36 @@
-# README
+# SETUP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Install dependencies
+```ruby 3.2.0```  
+```gem install bundler:2.4.19```  
+```bundle install```
 
-Things you may want to cover:
 
-* Ruby version
+## Setup database
+```cp .env.example .env```
+Add DB_USERNAME and DB_PASSWORD to .env file
+## Setup database
+```rake db:create```
+```rake db:migrate```
+```rake db:seed```
 
-* System dependencies
 
-* Configuration
+# RUN
+```rails s```
 
-* Database creation
 
-* Database initialization
+# API
 
-* How to run the test suite
+## GET /api/templates
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+  {
+    "slogan": "slogan",
+    "company_name": "company_name",
+    "industry_id": 1,
+    "icon_ids": [],
+    "per_page": 100,
+    "page": 1
+  }
+```
 
-* Deployment instructions
-
-* ...
